@@ -1,0 +1,423 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* Google Font Work sans: font-family: 'Work Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700;900&display=swap");
+
+/* Font LarishNeue via font-face */
+@font-face {
+  font-family: larish;
+  src: url(../fonts/Larish\ Neue\ Semibold.woff2) format(woff2),
+    url(../fonts/LarishNeueSemibold.woff) format(woff);
+}
+/* Reset, get rid of bad habits */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* Overall */
+body {
+  font-size: 18px;
+  font-family: "larish";
+  background-color: #000;
+}
+.fullheight {
+  height: 100vh;
+}
+.padding {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.whitefont {
+  color: #fff;
+}
+.whitebg {
+  background-color: #fff;
+  color: #000;
+}
+section {
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+/* Fonts and Headings */
+
+p,
+a,
+#presents {
+  font-family: "Work Sans", sans-serif;
+}
+h1 {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2,
+.count {
+  font-size: 7rem;
+}
+.facts h2 {
+  width: 80%;
+}
+.count {
+  font-family: "larish";
+  font-weight: bold;
+}
+.transparent {
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  -webkit-text-fill-color: #000;
+  display: block;
+  margin-top: -24%;
+}
+.transparent2 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  display: inline;
+}
+.linebreak::before {
+  content: "\A";
+  white-space: pre;
+}
+
+/* Header */
+
+header {
+  background-image: url(../img/svg/line.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+#line {
+  width: 1px;
+  height: 20vh;
+  margin: 0 auto;
+  background-color: grey;
+  display: block;
+}
+#intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40vh;
+  padding-top: 5%;
+}
+#outro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40vh;
+}
+.button {
+  border: 1px solid;
+  padding: 1.5% 4%;
+}
+.buttonfooter {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+/* Main */
+/* Numbers, facts.. all that stuff */
+#numbers {
+  padding-top: 15%;
+}
+.facts {
+  background: url(../img/svg/map.svg) no-repeat bottom right/38%;
+}
+/* Middle thingy thing */
+.middle {
+  background-image: url(../img/action2.jpeg), url(../img/action3.jpeg),
+    url(../img/action4.jpeg), url(../img/action5.jpeg), url(../img/action6.jpeg);
+  background-position: 8% 15%, right 30%, 24% 50%, 80% 62%, left 80%;
+  background-size: 20%, 20%, 25%, 25%, 25%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 250vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.middletext {
+  height: 240vh;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+#imagetop {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  top: -5%;
+  left: 60%;
+}
+#imagebottom {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  bottom: -2%;
+  left: 45%;
+}
+/*Section Bears - it's not bearing at all */
+.bear1 {
+  height: 125vh;
+}
+.bear2 {
+  height: 200vh;
+}
+
+.textflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#containertextflex {
+  padding-top: 35vh;
+}
+.textflexhead {
+  width: 25%;
+  text-transform: capitalize;
+}
+.textflexquote {
+  width: 50%;
+}
+.textflexquote p {
+  font-family: "larish";
+  font-size: 2.25rem;
+}
+.origin,
+.chapter {
+  font-family: "Work Sans", sans-serif;
+}
+.origin {
+  font-size: 1.25rem;
+}
+.origin::before {
+  content: "\2014";
+  padding-right: 1%;
+}
+
+/* The circle of life */
+.circle {
+  position: relative;
+  overflow: hidden;
+}
+.circleimg {
+  background: url(../img/png/cc-circle-2.png) no-repeat center center/contain;
+
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 80%;
+  top: -10%;
+  -webkit-animation: zspin 8s linear infinite;
+  animation: zspin 8s linear infinite;
+}
+@-webkit-keyframes zspin {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes zspin {
+  from {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* The golden and the poppy bear images, pet them */
+.bearimages {
+  position: relative;
+}
+.biggerbear {
+  width: 65%;
+  height: auto;
+  position: absolute;
+}
+.smallerbear {
+  width: 30%;
+  height: auto;
+  position: absolute;
+}
+#biggerbear1 {
+  top: 10vh;
+  left: 0;
+  z-index: 200;
+  position: absolute;
+}
+#smallerbear1 {
+  z-index: 300;
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+}
+#biggerbear2 {
+  top: 10vh;
+  right: 0;
+  z-index: 400;
+  position: absolute;
+}
+#smallerbear2 {
+  z-index: 500;
+  position: absolute;
+  top: 35vh;
+  left: 10%;
+}
+/* Get the Footer done */
+
+footer {
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 1% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#footerquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 55vh;
+}
+#footerquote p {
+  font-size: 2.75rem;
+}
+
+#translatebox {
+  height: 8rem;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  left: 30%;
+  background-color: #fff;
+}
+#translate {
+  color: #000;
+  -webkit-animation: roll 6s linear normal infinite;
+  animation: roll 6s linear normal infinite;
+
+  background-color: #fff;
+  position: absolute;
+  width: 300vh;
+}
+@-webkit-keyframes roll {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes roll {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+}
+#lastright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 12vh;
+}
+#some {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#some a img {
+  height: 20px;
+  width: auto;
+  padding: 5px;
+}
+#support img {
+  height: 30px;
+  width: auto;
+}
